@@ -104,10 +104,11 @@
 			<td>成员方法</td>
         	<td>1.public static void sort(Comparable[] a)：对数组内的元素进行排序</br>2.private static boolean greater(Comparable v,Comparable w):判断v是否大于w</br>3.private static void exch(Comparable[] a,int i,int j)：交换a数组中，索引i和索引j处的值</td>
 		</tr>
-	</table>
-### 2.1.3冒泡排序的代码实现    
-> 
+	</table>  
+	
+### 2.1.3冒泡排序的代码实现  
 
+```
 	public class Bubble {
 	    /*
 	     * 对数组a中的元素进行排序
@@ -139,8 +140,8 @@
 	        a[j] = temp;
 	    }
 	}
-
->
+```
+```
 
 	import sort.Bubble;
 	
@@ -153,6 +154,7 @@
 	        System.out.println(Arrays.toString(arr));
 	    }
 	}
+```	
 ### 2.1.4冒泡排序的时间复杂度分析  
 冒泡排序使用了双层for循环，其中内层循环的循环体是真正完成排序的代码，所以，我们分析冒泡排序的时间复杂度，主要分析一下内层循环体的执行次数即可。  
 在最坏情况下，也就是假如要排序的元素为{6,5,4,3,2,1}逆序，那么：  
